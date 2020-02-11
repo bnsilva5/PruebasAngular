@@ -1,22 +1,21 @@
-var funcionUno = function (a, b) { return a + b; };
+let funcionUno = (a, b) => a + b;
 console.log(funcionUno(31, 10));
 //--------------------------------------
-var funcionDos = function (nombre) {
+let funcionDos = (nombre) => {
     nombre = nombre.toUpperCase();
     return nombre;
 };
 console.log(funcionDos("nicholas"));
 //----------------------------------------
-var stark = {
+let stark = {
     nombre: "Tony",
-    poder: function () {
-        var _this = this;
-        setTimeout(function () { return console.log(_this.nombre + " Inicia a volar"); }, 1500);
+    poder() {
+        setTimeout(() => console.log(this.nombre + " Inicia a volar"), 1500);
     }
 };
 stark.poder();
 //---------------------------------------------------
-var funciontres = function (nombres) {
+let funciontres = (nombres) => {
     nombres = nombres.toLocaleUpperCase();
     return nombres;
 };

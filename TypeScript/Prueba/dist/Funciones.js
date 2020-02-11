@@ -2,22 +2,22 @@ function saludar(nombre) {
     console.log("Hola" + nombre);
 }
 //---Objeto
-var wolverin = {
+let wolverin = {
     nombre: "Logan"
 };
 saludar(wolverin.nombre);
 //----------------------------------------- template literals
-var Nombre = "Nicholas";
-var Apellido = "Silva";
-var Edad = 21;
-var Texto = "Hola, " + Nombre + " " + Apellido + " (" + Edad + ")";
+let Nombre = "Nicholas";
+let Apellido = "Silva";
+let Edad = 21;
+let Texto = `Hola, ${Nombre} ${Apellido} (${Edad})`;
 console.log(Texto);
 //---------------------------------------------------- Funciones
 //------------Funcion/TemplateLiterals
 function getNombre() {
     return "Brandon";
 }
-var Texto2 = "" + getNombre();
+let Texto2 = `${getNombre()}`;
 console.log(Texto2);
 //-------------------------------------------
 function Multiplos(a) {
