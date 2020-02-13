@@ -2,9 +2,11 @@
     "compilerOptions": {
         "target": "es6",
         "outDir": "./dist",
+        "experimentalDecorators": true
+        
     },
     "include": [
-       "src/*"
+       "src"
     ]
     
   }
